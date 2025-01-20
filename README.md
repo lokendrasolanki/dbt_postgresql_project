@@ -121,7 +121,7 @@ Before you begin, ensure you have the following installed:
 1. First run below to seed the data inside postgres:
 
    ```bash
-   dbt seed
+   dbt seed --profiles-dir profiles/mart
    ```
 
 2. Run the model:
@@ -134,7 +134,7 @@ Before you begin, ensure you have the following installed:
 
 3. To run a specific model:
    ```bash
-   dbt run --models netflix.mart
+   dbt run --select netflix.mart --profiles-dir profiles/mart
    ```
 
 ---
