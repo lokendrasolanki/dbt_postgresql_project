@@ -1,0 +1,12 @@
+dbt_postgresql:
+  outputs:
+    dev:
+      dbname: dbt_project
+      host: localhost
+      pass: <password>
+      port: 5438
+      schema: netflix_mart
+      threads: 4
+      type: postgres
+      user: dbt_user
+  target: dev

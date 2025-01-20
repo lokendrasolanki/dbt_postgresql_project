@@ -1,0 +1,7 @@
+target/
+dbt_packages/
+logs/
+.idea/
+.DS_Store
+seeds/.DS_Store
+../.DS_Store

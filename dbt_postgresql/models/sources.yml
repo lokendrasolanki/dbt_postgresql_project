@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: netflix_data
+    database: dbt_project
+    schema: netflix_stage
+    tables:
+      - name: netflix_titles

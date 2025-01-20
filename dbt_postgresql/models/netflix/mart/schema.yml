@@ -1,0 +1,88 @@
+version: 2
+
+models:
+  - name: netflix_casts
+    description: "get netflix movies/show casts"
+    columns:
+      - name: show_id
+        description: ""
+
+      - name: cast
+        description: ""
+
+  - name: netflix_countries
+    description: ""
+    columns:
+      - name: show_id
+        description: ""
+
+      - name: country
+        description: ""
+
+  - name: netflix_listed_ins
+    description: ""
+    columns:
+      - name: show_id
+        description: ""
+
+      - name: listed_in
+        description: ""
+
+  - name: netflix
+    description: ""
+    columns:
+      - name: show_id
+        description: ""
+
+      - name: type
+        description: ""
+
+      - name: title
+        description: ""
+
+      - name: director
+        description: ""
+
+      - name: date_added
+        description: ""
+
+      - name: release_year
+        description: ""
+
+      - name: rating
+        description: ""
+
+      - name: duration
+        description: ""
+
+      - name: description
+        description: ""
+
+  - name: director_genres_distribution
+    description: "in this query we are getting data of which dirctor produces movie/tv shows in which genres along with each genre coune 
+with total movies/Tv show "
+    columns:
+      - name: director
+        description: ""
+
+      - name: genre_distribution
+        description: ""
+
+      - name: total_titles
+        description: ""
+
+  - name: monthly_trends
+    description: "in this we will be analyzing the monthly trends of the netflix data where we will get count of 
+    tv shows and movies added each month allong with total count of tv shows and movies"
+    columns:
+      - name: month_added
+        description: ""
+
+      - name: total_movies
+        description: ""
+
+      - name: total_shows
+        description: ""
+
+      - name: total_movies_and_shows
+        description: ""

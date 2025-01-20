@@ -1,0 +1,19 @@
+name: 'dbt_postgresql'
+seed:
+  dbt_postgresql:
+    +enabled: true
+    schema: netflix_stage
+    netflix_titles:
+      +column_types:
+        show_id: varchar(10)
+        type: varchar(10)
+        title: varchar(255)
+        director: varchar(500)
+        cast: varchar(1000)
+        country: varchar(255)
+        date_added: varchar(50)
+        release_year: integer
+        rating: varchar(10)
+        duration: varchar(50)
+        listed_in: varchar(500)
+        description: varchar(1000)
